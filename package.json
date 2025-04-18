@@ -6,22 +6,50 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "node scripts/seed.js",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.15.1",
+    "@hookform/resolvers": "^5.0.1",
+    "@neondatabase/serverless": "^1.0.0",
+    "@prisma/client": "^6.6.0",
+    "@radix-ui/react-label": "^2.1.3",
+    "@radix-ui/react-slot": "^1.2.0",
+    "@vercel/blob": "^1.0.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "draft-js": "^0.11.7",
+    "lucide-react": "^0.488.0",
+    "markdown-draft-js": "^2.4.0",
+    "nanoid": "^5.1.5",
+    "next": "15.3.0",
+    "prisma": "^6.6.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.0"
+    "react-draft-wysiwyg": "^1.15.0",
+    "react-hook-form": "^7.55.0",
+    "react-markdown": "^10.1.0",
+    "tailwind-merge": "^3.2.0",
+    "tw-animate-css": "^1.2.5",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/markdown-draft-js": "^2.2.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "@types/react-draft-wysiwyg": "^1.13.8",
     "eslint": "^9",
     "eslint-config-next": "15.3.0",
-    "@eslint/eslintrc": "^3"
+    "eslint-config-prettier": "^10.1.2",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
